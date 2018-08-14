@@ -63,18 +63,10 @@ public class BrushManager : MonoBehaviour {
 	void Update () {
 		#if UNITY_STANDALONE_WIN 
 
-
-	
-
-	
-
 		SteamVR_Controller.Device device = SteamVR_Controller.Input((int)controller.index);
 
 		if (device.GetTouch (SteamVR_Controller.ButtonMask.Touchpad)) {
 			cursorsize = (device.GetAxis (Valve.VR.EVRButtonId.k_EButton_Axis0) [0] + 1) * 0.1f;
-
-
-
 
 			cursor.transform.localScale = new Vector3 (cursorsize, cursorsize, cursorsize);
 		}

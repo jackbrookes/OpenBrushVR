@@ -96,12 +96,12 @@ using System.Collections.Generic;
 			SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
 
 		#endif
-	//		if (device.GetTouchDown (SteamVR_Controller.ButtonMask.Trigger) && canpaint == true) {
+	//		if (device.GetPressDown (SteamVR_Controller.ButtonMask.Trigger) && canpaint == true) {
      
      //   var detector = _pinchDetectors[i];
         var drawState = _drawStates[0];
 #if UNITY_STANDALONE_WIN
-			if (device.GetTouchDown (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
+			if (device.GetPressDown (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
 		
 			if (BrushManager.freeformbool == false) {
 				strokes = drawState.BeginNewLine () as GameObject;
@@ -146,7 +146,7 @@ using System.Collections.Generic;
 
 #endif
 #if UNITY_STANDALONE_WIN
-			if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true){
+			if (device.GetPressUp (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true){
 			if (BrushManager.freeformbool == false) {
 				Mesh tempmesh;
 				 tempmesh = drawState.FinishLine () as Mesh;
@@ -163,7 +163,7 @@ using System.Collections.Generic;
 
 #endif
 #if UNITY_STANDALONE_WIN
-			if (device.GetTouch (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
+			if (device.GetPress (SteamVR_Controller.ButtonMask.Trigger) && BrushManager.canpaint == true) {
 
 
 			if (BrushManager.freeformbool == false) {

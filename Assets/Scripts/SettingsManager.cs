@@ -14,6 +14,6 @@ public class SettingsManager : MonoBehaviour {
 	}
 	public void reset(){
 
-		SceneManager.LoadScene ("OpenBrush");
+		SceneManager.LoadScene ("OpenBrush_Vive");
 	}
 }

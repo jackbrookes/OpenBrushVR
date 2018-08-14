@@ -46,23 +46,23 @@ public class enviManger : MonoBehaviour {
 
 		case 4:
 			RenderSettings.skybox = Skyboxes [skyboxint];
-			enviormentText.text = "Enviorment: Gray";
+			enviormentText.text = "Environment: Gray";
 				break;
 			case 3:
 			RenderSettings.skybox = Skyboxes [skyboxint];
-			enviormentText.text = "Enviorment: Space";
+			enviormentText.text = "Environment: Space";
 				break;
 			case 2:
 			RenderSettings.skybox = Skyboxes [skyboxint];
-			enviormentText.text = "Enviorment: White";
+			enviormentText.text = "Environment: White";
 				break;
 			case 1:
 			RenderSettings.skybox = Skyboxes [skyboxint];
-			enviormentText.text = "Enviorment: Night Sky";
+			enviormentText.text = "Environment: Night Sky";
 				break;
 		default:
 			RenderSettings.skybox = Skyboxes [skyboxint];
-			enviormentText.text = "Enviorment: Blue Sky";
+			enviormentText.text = "Environment: Blue Sky";
 			skyboxint = 6;
 				break;
 			}
